@@ -40,7 +40,7 @@ public class WorkerResource {
 	}
 
 	@GetMapping
-	public ResponseEntity<List<Worker>> findall() {
+	public ResponseEntity<List<Worker>> findAll() {
 		List<Worker> list = repository.findAll();
 		return ResponseEntity.ok(list);
 	}
@@ -53,10 +53,6 @@ public class WorkerResource {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-
-		/*
-		 * int x = 1; if (x == 1) throw new RuntimeException("Test");
-		 */
 
 		logger.info("PORT = " + env.getProperty("local.server.port"));
 
