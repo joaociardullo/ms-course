@@ -14,8 +14,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>hr-oauth</name>
 	<description>authorization Server</description>
-
-	<properties>
+<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
 	</properties>
@@ -40,6 +39,10 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 	</dependencies>
 
